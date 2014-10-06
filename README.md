@@ -1,3 +1,3 @@
 # Base
 
-Backbone + Grunt + Boilerplate + Express template
+Backbone + Grunt + HTML5Boilerplate + Express template
