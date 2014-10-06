@@ -1,0 +1,55 @@
+doctype html
+html.no-js
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  title Base Boilerplate
+  meta(name='description', content='')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  //- Place favicon.ico and apple-touch-icon.png in the root directory
+  // build:css styles/vendor/libs.min.css
+  link(rel="stylesheet", href="bower_components/bower-foundation/css/normalize.css")
+  link(rel="stylesheet", href="bower_components/bower-foundation/css/foundation.css")
+  // /build
+  // build:css styles/main.min.css
+  link(rel='stylesheet', href='styles/main.css')
+  link(rel="stylesheet", href="styles/main.css.map")
+  // /build
+  // build:js scripts/vendor/modernizr.min.js
+  script(src='bower_components/modernizr/modernizr.js')
+  // /build
+body
+  <!--[if lt IE 8]>
+  p.browsehappy
+    | You are using an <strong>outdated</strong> browser.
+    | Please <a href="http://browsehappy.com/">upgrade your browser</a>
+    | to improve your experience.
+  <![endif]-->
+
+
+  h1 Hello world! This is HTML5 Boilerplate.
+  p This is the dev version
+
+  //- Libraries
+  // build:js scripts/vendor/libs.min.js
+  script(src='bower_components/jquery/jquery.js')
+  script(src='bower_components/lodash/lodash.compat.js')
+  script(src='bower_components/backbone/backbone.js')
+  script(src='bower_components/lodash/lodash.underscore.js')
+  // /build
+
+  //- Custom Scripts
+  // build:js scripts/app.js
+  // script(src='javascripts/script.js')
+  // /build
+
+
+  //- Google Analytics: change UA-XXXXX-X to be your site's ID.
+  // -
+    script(type='text/javascript').
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
