@@ -1,1 +1,3 @@
-# Base: Backbone + Grunt + Boilerplate + Express
+# Base
+
+Backbone + Grunt + Boilerplate + Express template
